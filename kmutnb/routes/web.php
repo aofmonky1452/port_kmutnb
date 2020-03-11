@@ -20,7 +20,7 @@ Auth::routes();
 
 // name
 Route::get('/index', 'PagesController@index')->name('index');
-Route::get('/test', 'PagesController@test')->name('test');
+Route::get('/personal', 'PagesController@personal')->name('personal');
 
 
 // Route::get('/admin', 'LoginAdminController@index')->name('admin');

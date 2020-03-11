@@ -26,8 +26,9 @@ class PagesController extends Controller
         return view('home');
     }
 
-    public function test()
+
+    public function personal()
     {
-        return view('test');
+        return view('personal');
     }
 }

@@ -57,5 +57,45 @@ $(function () {
           .nextAll().removeClass('active left').addClass('right');
       }
   });
-  
+
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    //   var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        if($('.active').position().left == '0') {
+
+            if($('.active').is(':last-child')) {
+
+                    $('.slide:first').addClass('active').removeClass('left')
+                    .siblings().removeClass('active left').addClass('right')
+
+            } else {
+
+                $('.active').next().addClass('active').removeClass('right')
+                .siblings().removeClass('active').end()
+                .prevAll().addClass('left');
+            }
+
+            var slideId = '#' + $('.active').attr('id');
+            $('span[data-get =\"' + slideId + '\"]').addClass('clicked')
+                .siblings().removeClass('clicked');
+        }
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}  
+
+
+
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+  }
+
 });
+
+// $(document).ready(function(){
+    
+// });
