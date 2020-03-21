@@ -1,7 +1,67 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
+<div class="vue-container">
+    <div class="card-login">
+        <p>สมัครสมาชิก</p>
+        <form class="register" method="POST" action="{{ route('register') }}">
+            {{-- Student ID FIX 13 digits --}}
+            <input id="tname" type="text" class="txt-login @error('tname') is-invalid @enderror" name="tname" value="{{ old('tname') }}" required autocomplete="tname" placeholder="รหัสนักศึกษา">
+            
+            {{-- Password --}}
+            <input id="tname" type="password" class="txt-login @error('tname') is-invalid @enderror" name="tname" value="{{ old('tname') }}" required autocomplete="tname" placeholder="รหัสผ่าน">
+
+            <div class="registerForm-row">
+                {{-- Title name --}}
+                <select class="select-title">
+                    <option value="">คำนำหน้า</option>
+                    <option value="นาย">นาย</option>
+                    <option value="นาง">นาง</option>
+                    <option value="นางสาว">นางสาว</option>
+                </select>
+
+                {{-- First name --}}
+                <input id="fname" type="text" class="txt-small @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" placeholder="ชื่อ">
+                {{-- Last name --}}
+                <input id="fname" type="text" class="txt-small @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" placeholder="นามสกุล">
+            </div>
+
+            <div class="registerForm-row">
+                {{-- Year --}}
+                <select class="select-year">
+                    <option value="">ชั้นปี</option>
+                    <option value="ปี 1">ปี 1</option>
+                    <option value="ปี 2">ปี 2</option>
+                    <option value="ปี 3">ปี 3</option>
+                    <option value="ปี 4">ปี 4</option>
+                </select>
+
+                {{-- Department --}}
+                <select class="select-department">
+                    <option value="">สาขาวิชา</option>
+                    <option value="PnET(PE)-R">PnET(PE)-R</option>
+                    <option value="PnET(PE)-2R">PnET(PE)-2R</option>
+                    <option value="PnET(C)-R">PnET(C)-R</option>
+                    <option value="PNT-R">PNT-R</option>
+                    <option value="PNT-T">PNT-T</option>
+                </select>
+            </div>
+
+            {{-- email --}}
+            <input id="fname" type="text" class="txt-login @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" placeholder="อีเมล">
+
+            {{-- Tel Fix 9 digits --}}
+            <input id="fname" type="text" class="txt-login @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" placeholder="โทรศัพท์">
+            
+            {{-- Button submit --}}
+            <input type="submit" value="สมัครสมาชิก" class="btn-register">
+
+        </form>
+    </div>
+</div>
+
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -143,5 +203,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection

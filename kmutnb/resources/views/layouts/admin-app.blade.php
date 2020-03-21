@@ -44,17 +44,17 @@
     <div class="nav">
         <div class="nav-container">
         <div class="nav-left">
-            <a href="{{route('index')}}">
-            <img src="{{asset('img/logo.png')}}">
+            <a href="{{route('indexAdmin')}}">
+            <img src="{{asset('img/logo.png')}}" alt="" />
             </a>
             <div class="nl-title">
-            <h2><a href="{{route('index')}}">ภาควิชาเทคโนโลยีวิศวกรรมไฟฟ้า</a></h2>
-            <h4><a href="{{route('index')}}">วิทยาลัยเทคโนโลยีอุตสาหกรรม</a></h4>
+            <h2><a href="{{route('indexAdmin')}}">ภาควิชาเทคโนโลยีวิศวกรรมไฟฟ้า</a></h2>
+            <h4><a href="{{route('indexAdmin')}}">วิทยาลัยเทคโนโลยีอุตสาหกรรม</a></h4>
             </div>
         </div>
         <div class="nav-right">
             <a href="{{route('login')}}"><i class="fas fa-user"></i>เข้าสู่ระบบ</a>
-            <a href="{{route('indexAdmin')}}" class="aj">บุคลากร</a>
+            <a href="#" class="aj">บุคลากร</a>
         </div>
         </div>
     </div>
@@ -63,12 +63,12 @@
     <div class="nav-menu">
         <div class="nm-container">
             <ul class="menu">
-                <li><a href="{{route('index')}}"><i class="fas fa-home"></i>หน้าแรก</a></li>
+                <li><a href="{{route('indexAdmin')}}"><i class="fas fa-home"></i>หน้าแรก</a></li>
                 <li><a href="#"><i class="fas fa-info-circle"></i>เกี่ยวกับภาควิชา</a>
                     <ul class="menu-sub">
-                        <li><a href="{{route('news')}}">ข่าวสารประชาสัมพันธ์</a></li>
-                        <li><a href="{{route('aboutDepartment')}}">ประวัติความเป็นมา</a></li>
-                        <li><a href="{{route('mission')}}">พันธกิจ/วิสัยทัศน์</a></li>
+                        <li><a href="{{route('news_Admin')}}">ข่าวสารประชาสัมพันธ์</a></li>
+                        <li><a href="{{route('aboutDepartment_Admin')}}">ประวัติความเป็นมา</a></li>
+                        <li><a href="{{route('mission_Admin')}}">พันธกิจ/วิสัยทัศน์</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><i class="fas fa-book"></i>กิจกรรมภาควิชา</a>
@@ -76,14 +76,14 @@
                         <li><a href="#">วิดีโอเกี่ยวกับภาควิชา</a></li>
                         <li><a href="#">กิจกรรม/รูปภาพ</a></li>
                     </ul></li>
-                <li><a href="#"><i class="fas fa-users"></i>บุคลากร</a>
+                <li><a href="{{route('personal')}}"><i class="fas fa-users"></i>บุคลากร</a>
                     <ul class="menu-sub">
-                        <li><a href="{{route('personal')}}">บุคลากร</a></li>
+                        <li><a href="{{route('personal_Admin')}}">บุคลากร</a></li>
                         <li><a href="#">โครงสร้างองค์กร</a></li>
                     </ul></li>
                 <li><a href="#"><i class="fas fa-address-book"></i>หลักสูตร</a>
                     <ul class="menu-sub">
-                        <li><a href="{{route('industry')}}">อุตสาหกรรมบัณฑิต</a></li>
+                        <li><a href="#">อุตสาหกรรมบัณฑิต</a></li>
                         <li><a href="#">วิศวกรรมบัณฑิต</a></li>
                         <li><a href="#">วิศวกรรมมหาบัณฑิต</a></li>
                     </ul></li>
@@ -153,7 +153,7 @@
             <a id="link-1" class="link-main"><i class="fas fa-sign-in-alt"></i>เข้าสู่ระบบ</a>
             <div id="link-sub-1" class="link-sub">
                 <a href="{{ route('login') }}">นักศึกษา</a>
-                <a href="{{route('indexAdmin')}}">บุคลากร</a>
+                <a href="{{ route('indexAdmin')}} ">บุคลากร</a>
                 <a href="{{ route('register') }}">สมัครสมาชิก</a>
             </div>
         </li>
@@ -165,9 +165,9 @@
         <li>
             <a id="link-3" class="link-main"><i class="fas fa-info-circle"></i>เกี่ยวกับภาควิชา</a>
             <div id="link-sub-3" class="link-sub">
-                <a href="{{route('news')}}">ข่าวสารประชาสัมพันธ์</a>
-                <a href="{{route('aboutDepartment')}}">ประวัติความเป็นมา</a>
-                <a href="{{route('mission')}}">พันธกิจ/วิสัยทัศน์</a>
+                <a href="{{route('news_Admin')}}">ข่าวสารประชาสัมพันธ์</a>
+                <a href="{{route('aboutDepartment_Admin')}}">ประวัติความเป็นมา</a>
+                <a href="{{route('mission_Admin')}}">พันธกิจ/วิสัยทัศน์</a>
             </div>
         </li>
 
@@ -180,7 +180,7 @@
         </li>
 
         <li>
-            <a id="link-5" class="link-main" href="#"><i class="fas fa-users"></i>บุคลากร</a>
+            <a id="link-5" class="link-main" href="{{route('personal')}}"><i class="fas fa-users"></i>บุคลากร</a>
             <div id="link-sub-5" class="link-sub">
                 <a href="{{route('personal')}}">บุคลากร</a>
                 <a href="#">โครงสร้างองค์กร</a>
@@ -255,9 +255,7 @@
     <footer>
         <div class="footer-container">
           <div class="footer-detail">
-            <script src="{{ asset('js/couterVisitPage.js') }}"></script>
-
-            <p><i class="far fa-copyright"></i> Copyright KMUTNB 2020 K.Natthakiat & K.Kaittikun </p>
+            <p>จำนวนการเยี่ยมชมเว็บไซต์ 100</p>
           </div> <!-- end footer detail -->
           
           <div class="footer-ul">
@@ -266,6 +264,11 @@
                 <div class="footer-main">
                     <div class="fm-left">
                         <i class="fas fa-building"></i>
+                    </div>
+                    <div class="admin-manageFooter">
+                        <a href="#" class="btn-footer">แก้ไข</a>
+                        <a href="#" class="btn-footer">แก้ไข</a>
+                        <a href="#" class="btn-footer">แก้ไข</a>
                     </div>
                     <div class="fm-right">
                         <p>ตึก 63 ชั้น 2</p>
@@ -277,6 +280,9 @@
                     <div class="fm-left">
                         <i class="fas fa-phone-alt"></i>
                     </div>
+                    <div class="admin-manageFooter">
+                        <a href="#" class="btn-footer">แก้ไข</a>
+                    </div>
                     <div class="fm-right">
                         <p>โทรศัพท์ : 01-2345-678</p>
                     </div>
@@ -284,6 +290,9 @@
                 <div class="footer-main">
                     <div class="fm-left">
                         <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="admin-manageFooter">
+                        <a href="#" class="btn-footer">แก้ไข</a>
                     </div>
                     <div class="fm-right">
                         <p>อีเมล : example@kmutnb.ac.th</p>
@@ -298,6 +307,7 @@
             </ul>
           </div>
         </div>
+
       </footer>
 
 

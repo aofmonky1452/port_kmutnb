@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin-app')
 
 @section('content')
 
@@ -26,136 +26,122 @@
     </div>
 </div>
 
+<div class="admin-changeImage">
+    <a href="#" class="btn-changeImage">เปลี่ยนรูปภาพที่ 1</a>
+    <a href="#" class="btn-changeImage">เปลี่ยนรูปภาพที่ 2</a>
+    <a href="#" class="btn-changeImage">เปลี่ยนรูปภาพที่ 3</a>
+    <a href="#" class="btn-changeImage">เปลี่ยนรูปภาพที่ 4</a>
+    <a href="#" class="btn-changeImage">เปลี่ยนรูปภาพที่ 5</a>
+    <a href="#" class="btn-changeImage">เปลี่ยนรูปภาพที่ 6</a>
+</div>
+
 
 <!-- Container Body -->
 <div class="main-container">
     <div class="card-news">
-        <div class="card-container">
-            <a href="#" class="a-topic">ข่าวประชาสัมพันธ์</a>
+        <div class="card-container-admin">
+            <div class="admin-addNews">
+                <a href="#" class="a-topic">ข่าวประชาสัมพันธ์</a>
+                <a href="#" class="btn-addNews"><i class="fas fa-plus-circle"></i>เพิ่มข่าว</a>
+            </div>
             <hr>
             <!-- ROW -->
             <div class="news-row">
 
                 <div class="card-news-info">
                     <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
                         <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
                     </div>
                     <div class="card-news-bottom">
                         <a href="#">1.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
                         <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
+                        <div class="admin-manageNews">
+                            <a href="#" class="btn-editNews">แก้ไข</a>
+                            <a href="#" class="btn-readNews">อ่านข่าว</a>
+                            <a href="#" class="btn-deleteNews">ลบ</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-news-info">
                     <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
                         <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
                     </div>
                     <div class="card-news-bottom">
                         <a href="#">2.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
                         <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
+                        <div class="admin-manageNews">
+                            <a href="#" class="btn-editNews">แก้ไข</a>
+                            <a href="#" class="btn-readNews">อ่านข่าว</a>
+                            <a href="#" class="btn-deleteNews">ลบ</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-news-info">
                     <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
                         <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
                     </div>
                     <div class="card-news-bottom">
                         <a href="#">3.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
                         <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
+                        <div class="admin-manageNews">
+                            <a href="#" class="btn-editNews">แก้ไข</a>
+                            <a href="#" class="btn-readNews">อ่านข่าว</a>
+                            <a href="#" class="btn-deleteNews">ลบ</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-news-info">
                     <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
                         <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
                     </div>
                     <div class="card-news-bottom">
                         <a href="#">4.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
                         <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
+                        <div class="admin-manageNews">
+                            <a href="#" class="btn-editNews">แก้ไข</a>
+                            <a href="#" class="btn-readNews">อ่านข่าว</a>
+                            <a href="#" class="btn-deleteNews">ลบ</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-news-info">
                     <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
                         <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
                     </div>
                     <div class="card-news-bottom">
                         <a href="#">5.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
                         <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
+                        <div class="admin-manageNews">
+                            <a href="#" class="btn-editNews">แก้ไข</a>
+                            <a href="#" class="btn-readNews">อ่านข่าว</a>
+                            <a href="#" class="btn-deleteNews">ลบ</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-news-info">
                     <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
                         <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
                     </div>
                     <div class="card-news-bottom">
                         <a href="#">6.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
                         <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
+                        <div class="admin-manageNews">
+                            <a href="#" class="btn-editNews">แก้ไข</a>
+                            <a href="#" class="btn-readNews">อ่านข่าว</a>
+                            <a href="#" class="btn-deleteNews">ลบ</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card-news-info">
-                    <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
-                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
-                    </div>
-                    <div class="card-news-bottom">
-                        <a href="#">7.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
-                        <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
-                    </div>
-                </div>
-
-                <div class="card-news-info">
-                    <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
-                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
-                    </div>
-                    <div class="card-news-bottom">
-                        <a href="#">8.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
-                        <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
-                    </div>
-                </div>
-                <div class="card-news-info">
-                    <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
-                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
-                    </div>
-                    <div class="card-news-bottom">
-                        <a href="#">9.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
-                        <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
-                    </div>
-                </div>
-                <div class="card-news-info">
-                    <div class="card-news-top">
-                        <div class="news-date">18-03-2563</div>
-                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
-                    </div>
-                    <div class="card-news-bottom">
-                        <a href="#">10.รับสมัครบุคลากรเข้าศึกษาต่อ</a>
-                        <span>Lorem ipsum dolor sit amet conseum dolor sit amet consectetur adipisicing elit. Eum, itaque!</span>
-                        <a class="btn-readmore" href="#">อ่านต่อ</a>
-                    </div>
-                </div>
+                
             </div> <!-- end row -->
         </div> <!-- card container -->
-        <a href="{{route('news')}}" class="btn-readall">
+        <a href="#" class="btn-readall">
             อ่านข่าวทั้งหมด    
         </a>  
     </div> <!-- card news -->

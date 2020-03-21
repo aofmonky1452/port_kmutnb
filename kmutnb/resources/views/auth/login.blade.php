@@ -1,7 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-aasdasd
+
+    <div class="vue-container">
+        <div class="card-login">
+            <p>เข้าสู่ระบบ</p>
+            <form method="POST" action="{{ route('login') }}">
+                {{-- username & password --}}
+                <input id="username" type="username" class="txt-login @error('username') is-invalid @enderror" name="username" value="{{ old('email') }}" required autocomplete="email" placeholder="รหัสนักศึกษา">
+                <input id="password" type="password" class="txt-login @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="รหัสผ่าน">
+                <div class="forgot-form">
+                    {{-- remember password --}}
+                    <div class="remember-form">
+                        <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                        <span>จดจำรหัสผ่าน</span>
+                    </div>
+                    {{-- forgot password --}}
+                    <a href="{{route('register')}}">สมัครสมาชิก</a>
+                </div>
+                <input type="submit" class="btn-login" value="เข้าสู่ระบบ">
+            </form>
+        </div>
+
+
+    </div>
 
 {{-- <div class="container">
     <div class="row justify-content-center">
